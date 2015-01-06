@@ -1,0 +1,22 @@
+<div class="col-md-6 col-md-offset-3">
+	<h2>Contact</h2>
+
+	<div class="form-group">
+		<%= simple_form_for @contact do |f| %>
+		<%= f.label :title, "Name:" %>
+	    <%= f.text_field :name, :required => true, class: "form-control"  %><br/>
+	    <%= f.label :title, "Email:" %>
+	    <%= f.text_field :email, :required => true, class: "form-control" %><br/>
+	    <%= f.label :title, "Comment:" %>
+	    <%= f.text_area :message, :as => :text, :required => true, class: "form-control" %>
+    </div>
+
+    <div>
+      </br>
+      <%= f.submit "Submit", class: "btn btn-default btn-default" %>
+    </div>
+  <% end %>
+
+</div>
+
+
